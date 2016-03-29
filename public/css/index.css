@@ -28,7 +28,6 @@ ul {
   .intro-display p {
     font-size: 20px;
     font-style: italic;
-    padding: 0 20px;
     margin-top: -10px; }
 
 .message-container {
@@ -182,6 +181,9 @@ ul {
 @media (min-width: 769px) {
   .intro-container {
     background-attachment: fixed; }
+
+  .intro-display p {
+    padding: 0 20px; }
 
   .message-container {
     max-width: 1080px;
