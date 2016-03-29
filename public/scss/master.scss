@@ -1,0 +1,155 @@
+@import 'vars';
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: $font-stack;
+}
+
+// Navigation
+
+// Menu Button
+
+#nav-icon {
+  width: 30px;
+  height: 28px;
+  margin: 8px;
+  margin-left: 8px;
+  left: 200px;
+  position: absolute;
+  cursor: pointer;
+}
+
+#nav-icon span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  padding: 1px;
+  margin-top: 1px;
+  margin-left: 1px;
+  background: #000;
+  border-radius: 9px;
+  opacity: 1;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+#nav-icon span:nth-child(1) {
+  top: 0px;
+  background: #ccc;
+}
+
+#nav-icon span:nth-child(2) {
+  top: 8px;
+  background: #1d1d1d;
+}
+
+#nav-icon span:nth-child(3) {
+  top: 16px;
+  background: #000;
+}
+
+#nav-icon.open span:nth-child(1) {
+  top: 8px;
+  transform: rotate(135deg);
+  background: #ccc;
+}
+
+#nav-icon.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+#nav-icon.open span:nth-child(3) {
+  top: 8px;
+  transform: rotate(-135deg);
+  background: #000;
+}
+
+// Menu Button END
+
+
+.nav-container {
+  position: fixed;
+  background: #333333;
+  width: 200px;
+  height: 100vh;
+  z-index: 10;
+  transform: translate3d(-200px, 0, 0);
+  transition: $translate-speed;
+}
+
+.nav-display {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: #333333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    list-style: none;
+
+    li {
+      line-height: 35px;
+    }
+
+    a {
+      color: #f5f5f5;
+      font-size: 20px;
+      text-decoration: none;
+    }
+  }
+}
+
+
+.active-menu {
+  transform: translate3d(0, 0, 0);
+  transition: $translate-speed;
+}
+
+.active-menu .nav-container {
+  transform: translate3d(0, 0, 0);
+  transition: $translate-speed;
+}
+
+
+// Navigation END
+
+// Profile
+
+.profile {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 10px;
+  text-align: center;
+
+  img {
+    width:100px;
+    height: 100px;
+    border-radius: 10px;
+  }
+
+  p {
+    color: #ccc;
+  }
+}
+
+
+// Profile END
+
+
+
+
+@media (min-width: 769px) {
+
+
+}
