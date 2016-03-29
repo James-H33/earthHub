@@ -13,7 +13,7 @@ ul {
   background: url('https://images.unsplash.com/photo-1430505046445-10ec3b96acf0?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: initial;
   background-position: bottom;
   position: relative;
   transition: $translate-speed;
@@ -262,6 +262,10 @@ ul {
 }
 
 @media (min-width: 769px) {
+
+  .intro-container {
+    background-attachment: fixed;
+  }
 
   // Message
 
