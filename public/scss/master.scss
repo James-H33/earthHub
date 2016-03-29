@@ -153,19 +153,22 @@ body {
   width: 100%;
   height: auto;
   background: #222e2e;
-  color: #ccc;
-  padding: 1.5em;
+  color: #fff;
 }
 
 footer {
-  width: 70%;
+  width: 80%;
   max-width: 900px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   ul {
     width: 200px;
     display: inline-block;
-    padding: 30px 70px;
+    padding: 30px 0;
   }
 
   li {
@@ -182,19 +185,22 @@ footer {
     width: 100%;
     height: auto;
     background: #222e2e;
-    color: #ccc;
+    color: #fff;
     padding: 2em 0;
   }
 
   footer {
-    width: 70%;
+    width: 100%;
     max-width: 900px;
     margin: 0 auto;
+    flex-direction: row;
+
 
     ul {
       width: 200px;
       display: inline-block;
-      padding: 30px 70px;
+      padding: 30px 30px;
+
     }
 
     li {

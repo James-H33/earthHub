@@ -95,7 +95,7 @@ ul {
 .middle-container {
   width: 100%;
   height: auto;
-  background: rgba(204, 204, 204, 0.29);
+  background: #ccc;
   padding: 80px 0;
   text-align: center;
 }
@@ -113,6 +113,7 @@ ul {
     font-size: 30px;
     padding-bottom: 10px;
     letter-spacing: 2px;
+    color: $primary-color;
     background: (0, 0, 0, 0.8);
   }
 
@@ -156,14 +157,16 @@ ul {
 
 .contribute-container {
   width: 100%;
-  height: 500px;
+  height: auto;
   padding: 80px 0;
 }
 
 .contribute {
   width: 80%;
-  max-width: 1080px;
+  max-width: 900px;
   margin: 0 auto;
+  text-align: center;
+  padding-bottom: 80px;
 
   h1 {
     font-size: 30px;
@@ -176,6 +179,79 @@ ul {
     line-height: 1.6em;
     letter-spacing: 0.4px;
     color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+// Info
+
+.contribute-info {
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  background: #ccc;
+
+  ul {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  li {
+    width: 250px;
+    display: inline-block;
+    padding: 30px 30px;
+    text-align: center;
+  }
+
+  i {
+    font-size: 60px;
+    color: $primary-color;
+    padding-bottom: 10px;
+  }
+
+  h2 {
+    color: rgba(0, 0, 0, 0.8);
+    padding-bottom: 10px;
+  }
+} // Info END
+
+
+// Form
+
+.form-group {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding: 80px 0;
+
+  h1 {
+    padding: 10px 0;
+  }
+
+  input {
+    width: 280px;
+    height: 40px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px 0;
+    display: block;
+    margin: 8px auto;
+  }
+
+  button {
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    padding: 8px;
+    margin: 20px 0;
+    background: $dark-primary-color;
+    border-color: $dark-primary-color;
+    color: #fff;
   }
 } // contribution Section END
 
@@ -270,6 +346,52 @@ ul {
     }
 
   }
+
+
+  .form-group {
+    width: 70%;
+
+    input {
+      width: 300px;
+    }
+
+  }
+
+  // Info
+
+  .contribute-info {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    background: #ccc;
+
+    ul {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    li {
+      width: 250px;
+      display: inline-block;
+      padding: 0 30px;
+      text-align: center;
+    }
+
+    i {
+      font-size: 60px;
+      color: $primary-color;
+      padding-bottom: 10px;
+    }
+
+    h2 {
+      color: rgba(0, 0, 0, 0.8);
+      padding-bottom: 10px;
+    }
+  } // Info END
 
 }
 

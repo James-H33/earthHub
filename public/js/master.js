@@ -23,7 +23,7 @@ $(window).on('scroll', function() {
   });
 
   $('.intro-display p').css({
-    'transform' : 'translateY(' + scrollCheck / .7 + '%)'
+    'transform' : 'translateY(' + scrollCheck / .6 + '%)'
   });
 
 });
