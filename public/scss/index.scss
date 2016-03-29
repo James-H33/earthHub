@@ -10,7 +10,7 @@ ul {
 .intro-container {
   width: 100%;
   height: 500px;
-  background: url('https://images.unsplash.com/photo-1444530441356-fa26b8524c60?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=e760f6fe2bace6d1816fbe83caf299a6');
+  background: url('https://images.unsplash.com/photo-1430505046445-10ec3b96acf0?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -20,9 +20,10 @@ ul {
 }
 
 .intro-display {
-  max-width: 1200px;
+  width: 100%;
   height: 100%;
   margin: 0 auto;
+  background: rgba(0, 0, 0, 0.5);
   color: #f5f5f5;
   display: flex;
   flex-direction: column;
@@ -89,9 +90,13 @@ ul {
   }
 }
 
+
+// Middle Section
 .middle-container {
   width: 100%;
-  height: 500px;
+  height: auto;
+  background: rgba(204, 204, 204, 0.29);
+  padding: 80px 0;
   text-align: center;
 }
 
@@ -100,15 +105,23 @@ ul {
   height: auto;
   margin: 0 auto;
 
+  ul {
+    padding-top: 40px;
+  }
+
   h1 {
     font-size: 30px;
     padding-bottom: 10px;
+    letter-spacing: 2px;
+    background: (0, 0, 0, 0.8);
   }
 
   hr {
     width: 80%;
     max-width: 900px;
     margin: 0 auto;
+    background: #1d1d1d;
+    border-color: #1d1d1d;
   }
 
   li {
@@ -121,7 +134,7 @@ ul {
     height: 220px;
     padding: 1.5em;
     transform: scale(1);
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   p {
@@ -136,7 +149,36 @@ ul {
     }
   }
 
+} // Middle Secition END
+
+
+// Contribution Section
+
+.contribute-container {
+  width: 100%;
+  height: 500px;
+  padding: 80px 0;
 }
+
+.contribute {
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  p {
+    line-height: 1.6em;
+    letter-spacing: 0.4px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+} // contribution Section END
+
 
 .space {
   width: 100%;
@@ -196,18 +238,19 @@ ul {
 
 
     p {
-      width: 300px;
+      width: 298px;
       height: 100px;
       position: absolute;
       background: rgba(255, 255, 255, 0.9);
-      margin-top: -115px;
-      margin-left: 8px;
+      margin-top: -136px;
+      margin-left: 10px;
       padding-top: 20px;
       opacity: 0;
-      transform: translateY(70px);
-      transition: all 0.5s ease;
+      transform: translateY(40px);
+      transition: $gallery-p;
 
       a {
+        font-size: 20px;
         color: #1d1d1d;
         text-decoration: none;
       }

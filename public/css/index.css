@@ -4,7 +4,7 @@ ul {
 .intro-container {
   width: 100%;
   height: 500px;
-  background: url("https://images.unsplash.com/photo-1444530441356-fa26b8524c60?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=e760f6fe2bace6d1816fbe83caf299a6");
+  background: url("https://images.unsplash.com/photo-1430505046445-10ec3b96acf0?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -13,9 +13,10 @@ ul {
   transition: all 0.4s ease; }
 
 .intro-display {
-  max-width: 1200px;
+  width: 100%;
   height: 100%;
   margin: 0 auto;
+  background: rgba(0, 0, 0, 0.5);
   color: #f5f5f5;
   display: flex;
   flex-direction: column;
@@ -61,20 +62,28 @@ ul {
 
 .middle-container {
   width: 100%;
-  height: 500px;
+  height: auto;
+  background: rgba(204, 204, 204, 0.29);
+  padding: 80px 0;
   text-align: center; }
 
 .gallery {
   max-width: 1080px;
   height: auto;
   margin: 0 auto; }
+  .gallery ul {
+    padding-top: 40px; }
   .gallery h1 {
     font-size: 30px;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+    background: 0, 0, 0, 0.8; }
   .gallery hr {
     width: 80%;
     max-width: 900px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    background: #1d1d1d;
+    border-color: #1d1d1d; }
   .gallery li {
     display: inline-block; }
   .gallery img {
@@ -82,7 +91,7 @@ ul {
     height: 220px;
     padding: 1.5em;
     transform: scale(1);
-    transition: all 0.4s ease-in-out; }
+    transition: all 0.3s ease-in-out; }
   .gallery p {
     margin-top: -20px;
     width: 300px;
@@ -91,6 +100,25 @@ ul {
     .gallery p a {
       color: #1d1d1d;
       text-decoration: none; }
+
+.contribute-container {
+  width: 100%;
+  height: 500px;
+  padding: 80px 0; }
+
+.contribute {
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto; }
+  .contribute h1 {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+    color: rgba(0, 0, 0, 0.8); }
+  .contribute p {
+    line-height: 1.6em;
+    letter-spacing: 0.4px;
+    color: rgba(0, 0, 0, 0.5); }
 
 .space {
   width: 100%;
@@ -130,17 +158,18 @@ ul {
       padding-bottom: 10px; }
 
   .gallery p {
-    width: 300px;
+    width: 298px;
     height: 100px;
     position: absolute;
     background: rgba(255, 255, 255, 0.9);
-    margin-top: -115px;
-    margin-left: 8px;
+    margin-top: -136px;
+    margin-left: 10px;
     padding-top: 20px;
     opacity: 0;
-    transform: translateY(70px);
-    transition: all 0.5s ease; }
+    transform: translateY(40px);
+    transition: all 0.3s ease; }
     .gallery p a {
+      font-size: 20px;
       color: #1d1d1d;
       text-decoration: none; }
   .gallery li:hover img {

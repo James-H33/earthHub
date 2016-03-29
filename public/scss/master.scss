@@ -15,9 +15,10 @@ body {
 // Menu Button
 
 #nav-icon {
-  width: 30px;
+  width: 35px;
   height: 28px;
   margin: 8px;
+  padding: 1px;
   margin-left: 8px;
   left: 200px;
   position: absolute;
@@ -27,12 +28,11 @@ body {
 #nav-icon span {
   display: block;
   position: absolute;
-  height: 2px;
-  width: 100%;
+  height: 1px;
+  width: 26px;
   padding: 1px;
-  margin-top: 1px;
-  margin-left: 1px;
-  background: #000;
+  margin-top: 4px;
+  margin-left: 3px;
   border-radius: 9px;
   opacity: 1;
   transform: rotate(0deg);
@@ -46,12 +46,12 @@ body {
 
 #nav-icon span:nth-child(2) {
   top: 8px;
-  background: #1d1d1d;
+  background: #ccc;
 }
 
 #nav-icon span:nth-child(3) {
   top: 16px;
-  background: #000;
+  background: #ccc;
 }
 
 #nav-icon.open span:nth-child(1) {
@@ -68,7 +68,7 @@ body {
 #nav-icon.open span:nth-child(3) {
   top: 8px;
   transform: rotate(-135deg);
-  background: #000;
+  background: #ccc;
 }
 
 // Menu Button END
@@ -76,7 +76,7 @@ body {
 
 .nav-container {
   position: fixed;
-  background: #333333;
+  background: $primary-color;
   width: 200px;
   height: 100vh;
   z-index: 10;
@@ -88,7 +88,7 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
-  background: #333333;
+  background: $primary-color;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,6 +105,10 @@ body {
       color: #f5f5f5;
       font-size: 20px;
       text-decoration: none;
+    }
+
+    a:hover {
+      font-weight: bold;
     }
   }
 }
@@ -141,15 +145,61 @@ body {
   p {
     color: #ccc;
   }
+} // Profile END
+
+// Footer
+
+.footer {
+  width: 100%;
+  height: auto;
+  background: #222e2e;
+  color: #ccc;
+  padding: 1.5em;
 }
 
+footer {
+  width: 70%;
+  max-width: 900px;
+  margin: 0 auto;
 
-// Profile END
+  ul {
+    width: 200px;
+    display: inline-block;
+    padding: 30px 70px;
+  }
+
+  li {
+
+  }
+}
 
 
 
 
 @media (min-width: 769px) {
 
+  .footer {
+    width: 100%;
+    height: auto;
+    background: #222e2e;
+    color: #ccc;
+    padding: 2em 0;
+  }
+
+  footer {
+    width: 70%;
+    max-width: 900px;
+    margin: 0 auto;
+
+    ul {
+      width: 200px;
+      display: inline-block;
+      padding: 30px 70px;
+    }
+
+    li {
+
+    }
+  }
 
 }
