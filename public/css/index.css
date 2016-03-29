@@ -76,7 +76,7 @@ ul {
     padding-top: 40px; }
   .gallery h1 {
     font-size: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     letter-spacing: 2px;
     color: #222e2e;
     background: 0, 0, 0, 0.8; }
@@ -100,7 +100,8 @@ ul {
     height: 100px;
     position: absolute; }
     .gallery p a {
-      color: #1d1d1d;
+      font-weight: bold;
+      color: #222e2e;
       text-decoration: none; }
 
 .contribute-container {
@@ -127,7 +128,7 @@ ul {
 .contribute-info {
   width: 100%;
   height: auto;
-  padding: 50px 0;
+  padding: 80px 0;
   background: #ccc; }
   .contribute-info ul {
     max-width: 1000px;
