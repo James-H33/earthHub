@@ -43,6 +43,7 @@ ul {
   width: 80%;
   margin: 0 auto; }
   .message-display-one h2 {
+    color: #222e2e;
     font-size: 30px;
     padding-bottom: 30px; }
   .message-display-one p {
@@ -64,7 +65,7 @@ ul {
 .middle-container {
   width: 100%;
   height: auto;
-  background: #ccc;
+  background: #f5f5f5;
   padding: 80px 0;
   text-align: center; }
 
@@ -129,7 +130,7 @@ ul {
   width: 100%;
   height: auto;
   padding: 80px 0;
-  background: #ccc; }
+  background: #f5f5f5; }
   .contribute-info ul {
     max-width: 1000px;
     margin: 0 auto;
@@ -250,8 +251,7 @@ ul {
   .contribute-info {
     width: 100%;
     height: auto;
-    padding: 50px 0;
-    background: #ccc; }
+    padding: 50px 0; }
     .contribute-info ul {
       max-width: 1000px;
       margin: 0 auto;

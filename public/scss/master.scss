@@ -41,23 +41,23 @@ body {
 
 #nav-icon span:nth-child(1) {
   top: 0px;
-  background: #ccc;
+  background: $menu-span-color;
 }
 
 #nav-icon span:nth-child(2) {
   top: 8px;
-  background: #ccc;
+  background: $menu-span-color;
 }
 
 #nav-icon span:nth-child(3) {
   top: 16px;
-  background: #ccc;
+  background: $menu-span-color;
 }
 
 #nav-icon.open span:nth-child(1) {
   top: 8px;
   transform: rotate(135deg);
-  background: #ccc;
+  background: $menu-span-color;
 }
 
 #nav-icon.open span:nth-child(2) {
@@ -68,7 +68,7 @@ body {
 #nav-icon.open span:nth-child(3) {
   top: 8px;
   transform: rotate(-135deg);
-  background: #ccc;
+  background: $menu-span-color;
 }
 
 // Menu Button END
