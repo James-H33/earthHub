@@ -10,10 +10,11 @@
   height: 100%;
   position: relative;
   margin: 0 auto;
-  padding-top: 50px; }
+  padding-top: 0; }
   .collections-display h1 {
     text-align: center;
-    color: #222e2e; }
+    color: #222e2e;
+    padding-bottom: 30px; }
   .collections-display h4 {
     display: none; }
 
@@ -44,7 +45,8 @@
 @media (min-width: 769px) {
   .collections-container h1 {
     text-align: left;
-    color: #222e2e; }
+    color: #222e2e;
+    padding-bottom: 0; }
   .collections-container h4 {
     display: initial;
     position: absolute;
@@ -55,7 +57,8 @@
     color: #222e2e; }
 
   .collections-display {
-    width: 90%; }
+    width: 90%;
+    padding-top: 30px; }
 
   .col {
     display: inline-block; }
