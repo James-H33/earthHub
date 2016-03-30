@@ -1,0 +1,67 @@
+.collections-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 80px 0; }
+
+.collections-display {
+  width: 90%;
+  max-width: 1080px;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 50px; }
+  .collections-display h1 {
+    text-align: center;
+    color: #222e2e; }
+  .collections-display h4 {
+    display: none; }
+
+.col {
+  display: block; }
+
+.collections {
+  max-width: 1080px;
+  height: auto;
+  margin: 0 auto; }
+  .collections ul {
+    text-align: center; }
+  .collections li {
+    padding: 10px;
+    display: inline-block; }
+  .collections img {
+    width: 270px;
+    height: 220px; }
+  .collections p {
+    text-align: center;
+    font-size: 18px; }
+  .collections a {
+    text-decoration: none;
+    color: #222e2e; }
+  .collections h3 {
+    text-align: center; }
+
+@media (min-width: 769px) {
+  .collections-container h1 {
+    text-align: left;
+    color: #222e2e; }
+  .collections-container h4 {
+    display: initial;
+    position: absolute;
+    text-align: right;
+    right: 20px;
+    font-size: 25px;
+    font-weight: normal;
+    color: #222e2e; }
+
+  .collections-display {
+    width: 90%; }
+
+  .col {
+    display: inline-block; }
+
+  .collections li {
+    padding: 40px;
+    display: inline-block; } }
+
+/*# sourceMappingURL=collections.css.map */

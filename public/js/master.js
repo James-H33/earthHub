@@ -16,7 +16,6 @@ $(document).ready(function(){
 $(window).on('scroll', function() {
 
   var scrollCheck = $(this).scrollTop();
-  console.log(scrollCheck);
 
   $('.intro-display h1').css({
     'transform' : 'translateY(' + scrollCheck / 1.8 + '%)'
