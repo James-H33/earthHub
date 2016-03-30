@@ -13,11 +13,12 @@
   height: 100%;
   position: relative;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 0;
 
   h1 {
     text-align: center;
     color: $primary-color;
+    padding-bottom: 30px;
   }
 
   h4 {
@@ -72,6 +73,7 @@
     h1 {
       text-align: left;
       color: $primary-color;
+      padding-bottom: 0;
     }
 
     h4 {
@@ -87,6 +89,7 @@
 
   .collections-display {
     width: 90%;
+    padding-top: 30px;
   }
 
   .col {
